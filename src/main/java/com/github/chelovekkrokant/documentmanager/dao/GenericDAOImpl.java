@@ -1,7 +1,6 @@
-package com.github.chelovekkrokant.documentmanager.daoimpl;
+package com.github.chelovekkrokant.documentmanager.dao;
 
 
-import com.github.chelovekkrokant.documentmanager.dao.GenericDAO;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
