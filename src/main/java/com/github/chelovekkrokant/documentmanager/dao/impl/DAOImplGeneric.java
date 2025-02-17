@@ -1,15 +1,16 @@
-package com.github.chelovekkrokant.documentmanager.dao;
+package com.github.chelovekkrokant.documentmanager.dao.impl;
 
 
+import com.github.chelovekkrokant.documentmanager.dao.DAOGeneric;
 import org.hibernate.SessionFactory;
 
 import java.util.List;
 
-public class GenericDAOImpl <T1, T2> implements GenericDAO<T1, T2> {
+public class DAOImplGeneric<T1, T2> implements DAOGeneric<T1, T2> {
     private final Class<T1> currentClass;
     private final SessionFactory sessionFactory;
 
-    public GenericDAOImpl(Class<T1> currentClass, SessionFactory sessionFactory) {
+    public DAOImplGeneric(Class<T1> currentClass, SessionFactory sessionFactory) {
         this.currentClass = currentClass;
         if (sessionFactory == null){
             throw new IllegalArgumentException("The SessionFactory is null");

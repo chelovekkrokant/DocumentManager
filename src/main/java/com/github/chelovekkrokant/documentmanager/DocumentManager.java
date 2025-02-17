@@ -10,7 +10,7 @@ import java.io.IOException;
 public class DocumentManager extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(DocumentManager.class.getResource("menu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(DocumentManager.class.getResource("main-menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 300, 200);
         stage.setTitle("Менеджер документов");
         stage.setScene(scene);
