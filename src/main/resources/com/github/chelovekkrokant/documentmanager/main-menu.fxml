@@ -8,8 +8,8 @@
 
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
-      xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.github.chelovekkrokant.documentmanager.controller.ControllerMenu">
+      xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.github.chelovekkrokant.documentmanager.controller.MenuController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
@@ -33,37 +33,35 @@
                 <Insets bottom="15.0"/>
             </VBox.margin>
         </Button>
-        <Button minWidth="150.0" mnemonicParsing="false" text="Сохранить">
+        <Button minWidth="150.0" mnemonicParsing="false" text="Сохранить" fx:id="saveButton">
             <VBox.margin>
                 <Insets bottom="15.0"/>
             </VBox.margin>
         </Button>
-        <Button minWidth="150.0" mnemonicParsing="false" text="Загрузить">
+        <Button minWidth="150.0" mnemonicParsing="false" text="Загрузить" fx:id="loadButton">
             <VBox.margin>
                 <Insets bottom="15.0"/>
             </VBox.margin>
         </Button>
-        <Button minWidth="150.0" mnemonicParsing="false" text="Просмотр">
+        <Button minWidth="150.0" mnemonicParsing="false" text="Просмотр" fx:id="viewButton">
             <VBox.margin>
                 <Insets bottom="15.0"/>
             </VBox.margin>
         </Button>
-
-        <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
-            <Button minWidth="150.0" mnemonicParsing="false" text="Удалить">
+        <VBox alignment = "CENTER" prefHeight="200" prefWidth="100" VBox.vgrow="ALWAYS">
+            <Button minWidth="150.0" mnemonicParsing="false" text="Удалить" fx:id="deleteButton">
                 <VBox.margin>
                     <Insets bottom="15.0"/>
                 </VBox.margin>
             </Button>
         </VBox>
-
-
         <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
-            <Button minWidth="150.0" mnemonicParsing="false" text="Выход">
+            <Button minWidth="150.0" mnemonicParsing="false" text="Выход" fx:id="exitButton">
                 <VBox.margin>
                     <Insets/>
                 </VBox.margin>
             </Button>
         </VBox>
     </VBox>
+
 </HBox>
